@@ -1,0 +1,19 @@
+inherit rubygem
+
+NAME="ruby-listen"
+VERSION=2.7.9
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby file monitoring library"
+DESCRIPTION="The Listen gem listens to file modifications and notifies you
+about the changes."
+
+PATCH_URI="2.7.9-cygwin-deps.patch"
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_listen_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_listen_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+# conflicts with media player by same name
+PKG_IGNORE="usr/bin/listen"
