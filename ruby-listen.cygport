@@ -1,14 +1,14 @@
 inherit rubygem
 
 NAME="ruby-listen"
-VERSION=2.7.9
+VERSION=2.10.0
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby file monitoring library"
 DESCRIPTION="The Listen gem listens to file modifications and notifies you
 about the changes."
 
-PATCH_URI="2.7.9-cygwin-deps.patch"
+PATCH_URI="2.10.0-cygwin-deps.patch"
 
 ARCH=noarch
 
