@@ -1,0 +1,11 @@
+--- origsrc/listen-3.0.8/listen.gemspec	2018-04-26 13:40:35.283372700 -0500
++++ src/listen-3.0.8/listen.gemspec	2018-04-26 13:40:53.547510500 -0500
+@@ -23,8 +23,6 @@ Gem::Specification.new do |s|
+     s.specification_version = 4
+ 
+     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+-      s.add_runtime_dependency(%q<rb-fsevent>.freeze, [">= 0.9.4", "~> 0.9"])
+-      s.add_runtime_dependency(%q<rb-inotify>.freeze, [">= 0.9.7", "~> 0.9"])
+       s.add_development_dependency(%q<bundler>.freeze, [">= 1.3.5"])
+     else
+       s.add_dependency(%q<rb-fsevent>.freeze, [">= 0.9.4", "~> 0.9"])
